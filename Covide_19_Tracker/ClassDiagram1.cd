@@ -8,17 +8,24 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Covide_19_Tracker.Patient">
-    <Position X="5.25" Y="1" Width="1.5" />
+    <Position X="6.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Patient.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Covide_19_Tracker.Laboratoir">
-    <Position X="5.25" Y="3.5" Width="1.5" />
+    <Position X="2.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Laboratoir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covide_19_Tracker.PatientPotentiel">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>PatientPotentiel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
