@@ -7,15 +7,15 @@ namespace Covide_19_Tracker
 {
     public class Citoyen
     {
-        private int nom;
-        private int prenom;
-        private int cni;
-        private int adress;
-        private int date;
-        private int genre;
-        private int phone;
+        private string nom;
+        private string prenom;
+        private string cni;
+        private string adress;
+        private date date;
+        private string genre;
+        private string phone;
         private int field;
-        private int statut;
+        private string statut;
 
         public int Adress
         {

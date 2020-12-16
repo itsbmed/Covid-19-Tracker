@@ -14,5 +14,12 @@
       <FileName>Patient.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Covide_19_Tracker.Laboratoir">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Laboratoir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
