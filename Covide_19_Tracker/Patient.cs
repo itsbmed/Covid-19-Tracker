@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Covide_19_Tracker
 {
-    public class Patient
+    public class Patient : Citoyen
     {
         public string Letat
         {
-            get ;
-            set ;
-            
+            get;
+            set;
+
         }
     }
 }

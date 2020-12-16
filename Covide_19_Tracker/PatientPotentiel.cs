@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Covide_19_Tracker
 {
-    public class PatientPotentiel
+    public class PatientPotentiel : Citoyen
     {
         public bool TestResult
         {
