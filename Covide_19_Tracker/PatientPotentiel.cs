@@ -7,12 +7,13 @@ namespace Covide_19_Tracker
 {
     public class PatientPotentiel : Citoyen
     {
-        public bool TestResult
+        Laboratoir lab = new Laboratoir();
+        private int TestResult;
+
+        public bool Get_Result()
         {
-            get => default;
-            set
-            {
-            }
+            return lab.ResultValue;
         }
+
     }
 }

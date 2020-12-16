@@ -23,6 +23,14 @@ namespace Covide_19_Tracker
             }
         }
 
+        public bool ResultValue
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public bool Result()
         {
             throw new System.NotImplementedException();

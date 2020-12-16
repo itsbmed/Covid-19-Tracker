@@ -11,11 +11,12 @@ namespace Covide_19_Tracker
         private string prenom;
         private string cni;
         private string adress;
-        private date date;
+        private string date;
         private string genre;
         private string phone;
         private int field;
         private string statut;
+        private int id;
 
         public int Adress
         {
@@ -71,6 +72,18 @@ namespace Covide_19_Tracker
             set;
             
         }
-    
+
+        public int Id
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public void SetColor()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

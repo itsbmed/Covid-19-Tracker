@@ -7,11 +7,36 @@ namespace Covide_19_Tracker
 {
     public class Patient : Citoyen
     {
-        public string Letat
+        Laboratoir lab = new Laboratoir();
+        private bool result;
+        private string statut;
+
+        public bool Result
         {
             get;
             set;
-
+            
         }
+
+        public string Statut
+        {
+            get;
+            set;
+        }
+
+        public String Check_Status()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool Check_Result()
+        {
+            throw new System.NotImplementedException();
+        }
+        public bool Get_Result()
+        {
+           return lab.ResultValue;
+        }
+
     }
 }
