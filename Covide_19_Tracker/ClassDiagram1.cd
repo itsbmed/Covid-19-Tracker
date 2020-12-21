@@ -2,11 +2,8 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Covide_19_Tracker.Citoyen">
     <Position X="0.5" Y="1" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="true" />
-    </Compartments>
     <TypeIdentifier>
-      <HashCode>CASCAAgEAAAAAAAAAAIAIAACACgAIAApACgAIQAAAgA=</HashCode>
+      <HashCode>CATCAQgEAAAAAAAAAAIAIAACACgAIAArACgAIQAAAgA=</HashCode>
       <FileName>Citoyen.cs</FileName>
     </TypeIdentifier>
   </Class>

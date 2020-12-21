@@ -85,5 +85,20 @@ namespace Covide_19_Tracker
         {
             throw new System.NotImplementedException();
         }
+
+        public bool CheckEmail()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool CheckCni()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool CheckFields()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
