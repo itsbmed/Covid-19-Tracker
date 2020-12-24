@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Configuration;
 namespace Covide_19_Tracker
 {
     public class Citoyen
     {
+        String connectionString = ConfigurationManager.ConnectionStrings["CnxToSql"].ConnectionString;
         private string nom;
         private string prenom;
         private string cni;
