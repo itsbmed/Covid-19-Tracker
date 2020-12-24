@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Data.SqlClient;
 namespace Covide_19_Tracker
 {
     public class PatientPotentiel : Citoyen
