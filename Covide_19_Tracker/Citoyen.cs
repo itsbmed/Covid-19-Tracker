@@ -9,16 +9,13 @@ namespace Covide_19_Tracker
     public class Citoyen
     {
         String connectionString = ConfigurationManager.ConnectionStrings["CnxToSql"].ConnectionString;
-        private string nom;
-        private string prenom;
+        private string fullname;
         private string cni;
         private string adress;
         private string date;
         private string genre;
         private string phone;
-        private int field;
         private string statut;
-        private int id;
 
         public int Adress
         {
@@ -48,7 +45,7 @@ namespace Covide_19_Tracker
             
         }
 
-        public int Nom
+        public int FullName
         {
             get;
             set;
@@ -61,26 +58,13 @@ namespace Covide_19_Tracker
             
         }
 
-        public int Prenom
-        {
-            get;
-            set;
-           
-        }
+       
 
         public int Statut
         {
             get;
             set;
             
-        }
-
-        public int Id
-        {
-            get => default;
-            set
-            {
-            }
         }
 
         public void SetColor()
