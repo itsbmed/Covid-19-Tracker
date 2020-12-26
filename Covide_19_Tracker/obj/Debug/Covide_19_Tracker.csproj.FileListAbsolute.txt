@@ -1,0 +1,10 @@
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\bin\Debug\Covide_19_Tracker.exe.config
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\bin\Debug\Covide_19_Tracker.exe
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\bin\Debug\Covide_19_Tracker.pdb
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.csprojAssemblyReference.cache
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.SignUp.resources
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.Properties.Resources.resources
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.csproj.GenerateResource.cache
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.csproj.CoreCompileInputs.cache
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.exe
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.pdb
