@@ -44,7 +44,7 @@ namespace Covide_19_Tracker
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(621, 605);
+            this.button1.Location = new System.Drawing.Point(583, 614);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 53);
             this.button1.TabIndex = 0;
