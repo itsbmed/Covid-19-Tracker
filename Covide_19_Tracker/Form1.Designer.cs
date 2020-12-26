@@ -53,43 +53,54 @@ namespace Covide_19_Tracker
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(509, 299);
-            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(385, 59);
+            this.textBox1.Size = new System.Drawing.Size(385, 29);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "Phone";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(509, 391);
-            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(385, 59);
+            this.textBox2.Size = new System.Drawing.Size(385, 29);
             this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "Brithday Date";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox4
             // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(509, 128);
-            this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(385, 59);
+            this.textBox4.Size = new System.Drawing.Size(385, 29);
             this.textBox4.TabIndex = 4;
+            this.textBox4.Text = "Cni";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
             // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(509, 212);
-            this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(385, 59);
+            this.textBox5.Size = new System.Drawing.Size(385, 29);
             this.textBox5.TabIndex = 5;
+            this.textBox5.Text = "Adress";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox6
             // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(509, 47);
-            this.textBox6.Multiline = true;
+            this.textBox6.Margin = new System.Windows.Forms.Padding(12);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(385, 59);
+            this.textBox6.Size = new System.Drawing.Size(385, 29);
             this.textBox6.TabIndex = 6;
+            this.textBox6.Text = "Full Name";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
