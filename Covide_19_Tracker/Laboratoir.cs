@@ -11,26 +11,20 @@ namespace Covide_19_Tracker
         String connectionString = ConfigurationManager.ConnectionStrings["CnxToSql"].ConnectionString;
         public string Name
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public string Adress
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public bool ResultValue
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public bool Result()
