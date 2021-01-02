@@ -16,6 +16,7 @@ namespace Covide_19_Tracker
         private string genre;
         private string phone;
         private string statut;
+        private int color;
 
         public int Adress
         {
@@ -65,6 +66,12 @@ namespace Covide_19_Tracker
             get;
             set;
             
+        }
+
+        public int Color
+        {
+            get;
+            set;
         }
 
         public void SetColor()
