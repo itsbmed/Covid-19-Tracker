@@ -18,6 +18,7 @@ namespace Covide_19_Tracker
         private string statut;
         private int color;
 
+
         public int Adress
         {
             get ;
@@ -79,19 +80,39 @@ namespace Covide_19_Tracker
             throw new System.NotImplementedException();
         }
 
-        public bool CheckEmail()
+        public bool CheckEmail(String  em)
         {
-            throw new System.NotImplementedException();
+            if (em.Trim() != "")
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
         }
 
-        public bool CheckCni()
+        public bool CheckCni(String cn)
         {
-            throw new System.NotImplementedException();
+            if (cn.Trim() != "")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
-        public bool CheckFields()
+        public bool CheckFields(String fn,String ad,String ph,String st)
         {
-            throw new System.NotImplementedException();
+            if (fn.Trim() != "" && ad.Trim() != "" && ph.Trim() != "" && st.Trim() != "" )
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }
