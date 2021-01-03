@@ -16,5 +16,10 @@ namespace Covide_19_Tracker
         {
             InitializeComponent();
         }
+
+        private void StatutField_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
