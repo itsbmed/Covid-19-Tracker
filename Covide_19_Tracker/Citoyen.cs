@@ -102,7 +102,12 @@ namespace Covide_19_Tracker
                 return true;
             }
         }
+        public void insertdata(String Fn,String Cn,String Ad,String Ph, String Bd,String St,String Gn,String Cl)
+        {
+            String cmd = "INSERT INTO citoyens(CNI,Fullname,Adress,Phone,Statut,Bdate,Genre,Color) " +
+                "VALUES('" + Cn +"','"+ Fn + "','" + Ad + "','" + Ph + "','" + St+ "','" + St + "','" + Bd + "','" + Gn + "','" + Cl + "')";
 
+        }
         public bool CheckFields(String fn,String ad,String ph,String st)
         {
             if (fn.Trim() != "" && ad.Trim() != "" && ph.Trim() != "" && st.Trim() != "" )
