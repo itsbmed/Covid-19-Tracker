@@ -16,44 +16,44 @@ namespace Covide_19_Tracker
         private string genre;
         private string phone;
         private string statut;
-        private int color;
+        private String color;
 
 
-        public int Adress
+        public String Adress
         {
             get ;
             set;
             
         }
 
-        public int Cni
+        public String Cni
         {
             get ;
             set;
             
         }
 
-        public int Date
+        public String Date
         {
             get;
             set;
             
         }
 
-        public int Genre
+        public String Genre
         {
             get ;
             set;
             
         }
 
-        public int FullName
+        public String FullName
         {
             get;
             set;
         }
 
-        public int Phone
+        public String Phone
         {
             get;
             set;
@@ -77,7 +77,15 @@ namespace Covide_19_Tracker
 
         public void SetColor()
         {
-            throw new System.NotImplementedException();
+            Laboratoir lb = new Laboratoir();
+            if (lb.ResultValue)
+            {
+                color = "Red";
+            }
+            else
+            {
+                color = "Normal";
+            }
         }
 
         public bool CheckEmail(String  em)

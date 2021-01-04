@@ -29,7 +29,14 @@ namespace Covide_19_Tracker
 
         public bool Result()
         {
-            throw new System.NotImplementedException();
+            if (ResultValue == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
