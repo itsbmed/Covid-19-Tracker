@@ -31,11 +31,11 @@ namespace Covide_19_Tracker
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Phbox = new System.Windows.Forms.TextBox();
+            this.Bdbox = new System.Windows.Forms.TextBox();
+            this.Cnbox = new System.Windows.Forms.TextBox();
+            this.Adbox = new System.Windows.Forms.TextBox();
+            this.Fnbox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
@@ -52,67 +52,68 @@ namespace Covide_19_Tracker
             this.button1.TabIndex = 0;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Signup);
             // 
-            // textBox1
+            // Phbox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBox1.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Location = new System.Drawing.Point(509, 351);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(385, 32);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Phone";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Phbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Phbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Phbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Phbox.Location = new System.Drawing.Point(509, 351);
+            this.Phbox.Name = "Phbox";
+            this.Phbox.Size = new System.Drawing.Size(385, 32);
+            this.Phbox.TabIndex = 1;
+            this.Phbox.Text = "Phone";
+            this.Phbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // Bdbox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBox2.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox2.Location = new System.Drawing.Point(509, 415);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(385, 32);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Brithday Date";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Bdbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Bdbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bdbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Bdbox.Location = new System.Drawing.Point(509, 415);
+            this.Bdbox.Name = "Bdbox";
+            this.Bdbox.Size = new System.Drawing.Size(385, 32);
+            this.Bdbox.TabIndex = 2;
+            this.Bdbox.Text = "Brithday Date";
+            this.Bdbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // Cnbox
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBox4.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox4.Location = new System.Drawing.Point(509, 223);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(385, 32);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "Cni";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Cnbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Cnbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cnbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Cnbox.Location = new System.Drawing.Point(509, 223);
+            this.Cnbox.Name = "Cnbox";
+            this.Cnbox.Size = new System.Drawing.Size(385, 32);
+            this.Cnbox.TabIndex = 4;
+            this.Cnbox.Text = "Cni";
+            this.Cnbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // Adbox
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBox5.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox5.Location = new System.Drawing.Point(509, 282);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(385, 32);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "Adress";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Adbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Adbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Adbox.Location = new System.Drawing.Point(509, 282);
+            this.Adbox.Name = "Adbox";
+            this.Adbox.Size = new System.Drawing.Size(385, 32);
+            this.Adbox.TabIndex = 5;
+            this.Adbox.Text = "Adress";
+            this.Adbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // Fnbox
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBox6.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox6.Location = new System.Drawing.Point(509, 161);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(12);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(385, 32);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.Text = "Full Name";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Fnbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Fnbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fnbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Fnbox.Location = new System.Drawing.Point(509, 161);
+            this.Fnbox.Margin = new System.Windows.Forms.Padding(12);
+            this.Fnbox.Name = "Fnbox";
+            this.Fnbox.Size = new System.Drawing.Size(385, 32);
+            this.Fnbox.TabIndex = 6;
+            this.Fnbox.Text = "Full Name";
+            this.Fnbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
@@ -191,11 +192,11 @@ namespace Covide_19_Tracker
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Fnbox);
+            this.Controls.Add(this.Adbox);
+            this.Controls.Add(this.Cnbox);
+            this.Controls.Add(this.Bdbox);
+            this.Controls.Add(this.Phbox);
             this.Controls.Add(this.button1);
             this.Name = "SignUp";
             this.Text = "Sign Up";
@@ -208,11 +209,11 @@ namespace Covide_19_Tracker
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Phbox;
+        private System.Windows.Forms.TextBox Bdbox;
+        private System.Windows.Forms.TextBox Cnbox;
+        private System.Windows.Forms.TextBox Adbox;
+        private System.Windows.Forms.TextBox Fnbox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox2;

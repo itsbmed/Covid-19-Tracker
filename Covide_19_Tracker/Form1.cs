@@ -12,9 +12,25 @@ namespace Covide_19_Tracker
 {
     public partial class SignUp : Form
     {
+        Citoyen ct = new Citoyen();
+        String Gr = "", Cl = "";
         public SignUp()
         {
+
+
             InitializeComponent();
+        }
+
+        private void Signup(object sender, EventArgs e)
+        {
+            ct.insertdata(
+                Fnbox.Text,
+                Cnbox.Text,
+                Adbox.Text,
+                Phbox.Text,
+                Bdbox.Text,
+                Gr,Gr, Cl ) ;
+
         }
     }
 }
