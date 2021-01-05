@@ -67,6 +67,8 @@ namespace Covide_19_Tracker
             this.Phbox.TabIndex = 1;
             this.Phbox.Text = "Phone";
             this.Phbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Phbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Phbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
             // Bdbox
             // 
@@ -79,6 +81,8 @@ namespace Covide_19_Tracker
             this.Bdbox.TabIndex = 2;
             this.Bdbox.Text = "Brithday Date";
             this.Bdbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Bdbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Bdbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
             // Cnbox
             // 
@@ -91,6 +95,8 @@ namespace Covide_19_Tracker
             this.Cnbox.TabIndex = 4;
             this.Cnbox.Text = "Cni";
             this.Cnbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Cnbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Cnbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
             // Adbox
             // 
@@ -103,6 +109,8 @@ namespace Covide_19_Tracker
             this.Adbox.TabIndex = 5;
             this.Adbox.Text = "Adress";
             this.Adbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Adbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Adbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
             // Fnbox
             // 
@@ -116,6 +124,8 @@ namespace Covide_19_Tracker
             this.Fnbox.TabIndex = 6;
             this.Fnbox.Text = "Full Name";
             this.Fnbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Fnbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Fnbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
             // pictureBox1
             // 

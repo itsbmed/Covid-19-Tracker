@@ -100,7 +100,7 @@ namespace Covide_19_Tracker
 
         public bool CheckCni(String cn)
         {
-            if (cn.Trim() != "" && cn.Length == 7)
+            if (cn.Trim() != "" && cn.Length == 8)
             {
                 return false;
             }

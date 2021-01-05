@@ -44,6 +44,25 @@ namespace Covide_19_Tracker
 
 
         }
+        public String t ;
+        private void Focus_Click(object sender, EventArgs e)
+        {
+
+            TextBox tb = (TextBox)sender;
+            t = tb.Text;
+            tb.Text = "";
+
+        }
+
+        private void Focus_Leave(object sender, EventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            if(tb.Text == "")
+            {
+                tb.Text = t;
+            }
+        }
+
         private void Signup(object sender, EventArgs e)
         {
 
