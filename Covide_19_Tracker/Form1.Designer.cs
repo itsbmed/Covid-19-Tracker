@@ -37,10 +37,12 @@ namespace Covide_19_Tracker
             this.Adbox = new System.Windows.Forms.TextBox();
             this.Fnbox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.GrField = new System.Windows.Forms.ComboBox();
+            this.StField = new System.Windows.Forms.ComboBox();
+            this.GenreField = new System.Windows.Forms.Label();
+            this.StatutField = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,37 +128,6 @@ namespace Covide_19_Tracker
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.AllowDrop = true;
-            this.checkedListBox1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Normal",
-            "Patient"});
-            this.checkedListBox1.Location = new System.Drawing.Point(783, 489);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(111, 60);
-            this.checkedListBox1.TabIndex = 10;
-            // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.AllowDrop = true;
-            this.checkedListBox2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox2.ForeColor = System.Drawing.SystemColors.Info;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            "Man",
-            "Womman",
-            "Kid"});
-            this.checkedListBox2.Location = new System.Drawing.Point(509, 489);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(142, 60);
-            this.checkedListBox2.TabIndex = 11;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -181,16 +152,61 @@ namespace Covide_19_Tracker
             this.label2.Text = "Please Enter Your Personel Informations";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // GrField
+            // 
+            this.GrField.FormattingEnabled = true;
+            this.GrField.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.GrField.Location = new System.Drawing.Point(509, 514);
+            this.GrField.Name = "GrField";
+            this.GrField.Size = new System.Drawing.Size(121, 21);
+            this.GrField.TabIndex = 14;
+            // 
+            // StField
+            // 
+            this.StField.FormattingEnabled = true;
+            this.StField.Items.AddRange(new object[] {
+            "Normale",
+            "Patient"});
+            this.StField.Location = new System.Drawing.Point(757, 514);
+            this.StField.Name = "StField";
+            this.StField.Size = new System.Drawing.Size(121, 21);
+            this.StField.TabIndex = 15;
+            // 
+            // GenreField
+            // 
+            this.GenreField.AutoSize = true;
+            this.GenreField.Font = new System.Drawing.Font("Rajdhani", 18F);
+            this.GenreField.Location = new System.Drawing.Point(509, 471);
+            this.GenreField.Name = "GenreField";
+            this.GenreField.Size = new System.Drawing.Size(70, 30);
+            this.GenreField.TabIndex = 16;
+            this.GenreField.Text = "Genre";
+            // 
+            // StatutField
+            // 
+            this.StatutField.AutoSize = true;
+            this.StatutField.Font = new System.Drawing.Font("Rajdhani", 18F);
+            this.StatutField.Location = new System.Drawing.Point(752, 471);
+            this.StatutField.Name = "StatutField";
+            this.StatutField.Size = new System.Drawing.Size(74, 30);
+            this.StatutField.TabIndex = 17;
+            this.StatutField.Text = "Statut";
+            
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(949, 741);
+            this.Controls.Add(this.StatutField);
+            this.Controls.Add(this.GenreField);
+            this.Controls.Add(this.StField);
+            this.Controls.Add(this.GrField);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkedListBox2);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Fnbox);
             this.Controls.Add(this.Adbox);
@@ -215,10 +231,12 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.TextBox Adbox;
         private System.Windows.Forms.TextBox Fnbox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox GrField;
+        private System.Windows.Forms.ComboBox StField;
+        private System.Windows.Forms.Label GenreField;
+        private System.Windows.Forms.Label StatutField;
     }
 }
 
