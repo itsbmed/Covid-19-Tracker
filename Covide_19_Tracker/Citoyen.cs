@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Windows.Forms;
 namespace Covide_19_Tracker
 {
     public class Citoyen
@@ -21,58 +22,56 @@ namespace Covide_19_Tracker
 
         public String Adress
         {
-            get ;
-            set;
-            
+            get { return adress; }
+            set { adress = value; }
+
         }
 
         public String Cni
         {
-            get ;
-            set;
-            
+            get { return cni; }
+            set { cni = value; }
+
         }
 
         public String Date
         {
-            get;
-            set;
-            
+            get { return date; }
+            set { date = value; }
+
         }
 
         public String Genre
         {
-            get ;
-            set;
-            
+            get { return genre; }
+            set { genre = value; }
+
         }
 
         public String FullName
         {
-            get;
-            set;
+            get { return fullname; }
+            set { fullname = value; }
         }
 
         public String Phone
         {
-            get;
-            set;
-            
-        }
+            get { return phone; }
+            set { phone = value; }
 
-       
+        }
 
         public String Statut
         {
-            get;
-            set;
-            
+            get { return statut; }
+            set {statut = value; }
+
         }
 
         public String Color
         {
-            get;
-            set;
+            get { return color; }
+            set { color = value; }
         }
 
         public void SetColor()
@@ -125,6 +124,10 @@ namespace Covide_19_Tracker
                     cnx.Open();
                     cmd.ExecuteNonQuery();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Please Check The Fields");
             }
            
         }
