@@ -62,14 +62,14 @@ namespace Covide_19_Tracker
 
        
 
-        public int Statut
+        public String Statut
         {
             get;
             set;
             
         }
 
-        public int Color
+        public String Color
         {
             get;
             set;

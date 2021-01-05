@@ -28,7 +28,21 @@ namespace Covide_19_Tracker
             ct.Adress = Adbox.Text;
             ct.Phone = Phbox.Text;
             ct.Date = Bdbox.Text;
-            
+            ct.Genre = GrField.Text;
+            ct.Statut = StField.Text;
+            if (ct.Statut == "Normal")
+            {
+                ct.Color = "Green";
+            }
+            else if(ct.Statut == "vaccine")
+            {
+                ct.Color = "Blue";
+            }
+            else {
+                ct.Color = "Red";
+            }
+
+
         }
         private void Signup(object sender, EventArgs e)
         {
