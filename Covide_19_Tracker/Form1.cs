@@ -46,23 +46,8 @@ namespace Covide_19_Tracker
         }
         private void Signup(object sender, EventArgs e)
         {
-            if (lb.ResultValue)
-            {
 
-            }
-            else
-            {
-
-            }
-
-
-            ct.insertdata(
-                Fnbox.Text,
-                Cnbox.Text,
-                Adbox.Text,
-                Phbox.Text,
-                Bdbox.Text,
-                Gr,Gr, Cl ) ;
+            ct.insertdata( ct.FullName, ct.Cni, ct.Adress,ct.Phone,  ct.Date, ct.Genre, ct.Statut,  ct.Color ) ;
 
         }
     }

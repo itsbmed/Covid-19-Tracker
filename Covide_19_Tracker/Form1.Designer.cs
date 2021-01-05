@@ -168,7 +168,8 @@ namespace Covide_19_Tracker
             this.StField.FormattingEnabled = true;
             this.StField.Items.AddRange(new object[] {
             "Normale",
-            "Patient"});
+            "Patient",
+            "Vaccine"});
             this.StField.Location = new System.Drawing.Point(757, 514);
             this.StField.Name = "StField";
             this.StField.Size = new System.Drawing.Size(121, 21);
@@ -193,7 +194,6 @@ namespace Covide_19_Tracker
             this.StatutField.Size = new System.Drawing.Size(74, 30);
             this.StatutField.TabIndex = 17;
             this.StatutField.Text = "Statut";
-            
             // 
             // SignUp
             // 

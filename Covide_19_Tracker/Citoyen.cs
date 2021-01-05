@@ -88,9 +88,9 @@ namespace Covide_19_Tracker
             }
         }
 
-        public bool CheckEmail(String  em)
+        public bool CheckPhone(String  em)
         {
-            if (em.Trim() != "")
+            if (em.Trim() != "" && em.Length == 10)
             {
                 return false;
             }
@@ -101,7 +101,7 @@ namespace Covide_19_Tracker
 
         public bool CheckCni(String cn)
         {
-            if (cn.Trim() != "")
+            if (cn.Trim() != "" && cn.Length == 7)
             {
                 return false;
             }
@@ -112,25 +112,25 @@ namespace Covide_19_Tracker
         }
         public void insertdata(String Fn,String Cn,String Ad,String Ph, String Bd,String St,String Gn,String Cl)
         {
-            
-            using (SqlConnection cnx = new SqlConnection(connectionString))
+            if (CheckCni(Cni) && CheckPhone(Phone) && CheckFields(FullName,Adress,Statut,Genre,Date))
             {
-                String Query = "INSERT INTO citoyens(CNI,Fullname,Adress,Phone,Statut,Bdate,Genre,Color) " +
-                "VALUES('" + Cn + "','" + Fn + "','" + Ad + "','" + Ph + "','" + St + "','" + St + "','" + Bd + "','" + Gn + "','" + Cl + "')";
+                using (SqlConnection cnx = new SqlConnection(connectionString))
+                {
+                    String Query = "INSERT INTO citoyens(CNI,Fullname,Adress,Phone,Statut,Bdate,Genre,Color) " +
+                    "VALUES('" + Cn + "','" + Fn + "','" + Ad + "','" + Ph + "','" + St + "','" + St + "','" + Bd + "','" + Gn + "','" + Cl + "')";
 
-                SqlCommand cmd = new SqlCommand(Query, cnx);
-                if (cnx.State == System.Data.ConnectionState.Open)
-                    cnx.Close();
-                cnx.Open();
-                cmd.ExecuteNonQuery();
+                    SqlCommand cmd = new SqlCommand(Query, cnx);
+                    if (cnx.State == System.Data.ConnectionState.Open)
+                        cnx.Close();
+                    cnx.Open();
+                    cmd.ExecuteNonQuery();
+                }
             }
-            
-
-
+           
         }
-        public bool CheckFields(String fn,String ad,String ph,String st)
+        public bool CheckFields(String fn,String ad,String St,String Gr,String Dt)
         {
-            if (fn.Trim() != "" && ad.Trim() != "" && ph.Trim() != "" && st.Trim() != "" )
+            if (fn.Trim() != "" && ad.Trim() != "" && St.Trim() != "" && Gr.Trim() != "" && Dt.Trim() != "")
             {
                 return false;
             }
