@@ -8,3 +8,7 @@ Simple school project on tracking Covid-19 patients
 # CLASS DIAGRAM
 
 ![Class Diagram](https://github.com/BELACHHAB-MOHAMMED/Covid-19-Tracker/blob/main/UML/ClD.jpg) 
+
+# USE CASE DIAGRAM
+
+![Class Diagram](https://github.com/BELACHHAB-MOHAMMED/Covid-19-Tracker/blob/main/UML/UCD.jpg) 
