@@ -48,7 +48,7 @@ namespace Covide_19_Tracker
             this.Username.AutoSize = true;
             this.Username.Font = new System.Drawing.Font("Bangers", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Username.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Username.Location = new System.Drawing.Point(339, 159);
+            this.Username.Location = new System.Drawing.Point(317, 150);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(295, 56);
             this.Username.TabIndex = 0;
