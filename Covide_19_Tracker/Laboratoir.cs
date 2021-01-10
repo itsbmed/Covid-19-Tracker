@@ -9,17 +9,6 @@ namespace Covide_19_Tracker
     public class Laboratoir
     {
         String connectionString = ConfigurationManager.ConnectionStrings["CnxToSql"].ConnectionString;
-        public string Name
-        {
-            get;
-            set;
-        }
-
-        public string Adress
-        {
-            get;
-            set;
-        }
 
         public bool ResultValue
         {
