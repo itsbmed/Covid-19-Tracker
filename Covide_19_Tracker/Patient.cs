@@ -26,28 +26,39 @@ namespace Covide_19_Tracker
             set;
         }
 
-        public bool Check_Status()
+        public String Check_Status()
         {
-            Laboratoir lb = new Laboratoir();
+           
 
-            if (lb.ResultValue)
+            if (Check_Result())
             {
-                return false;
+                return "Patient";
             }
 
             else
             {
-                return true;
+                return "Normale";
             }
         }
 
         public bool Check_Result()
         {
-            throw new System.NotImplementedException();
+            Laboratoir lb = new Laboratoir();
+
+            if (lb.ResultValue)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
         }
         public bool Get_Result()
         {
-           return lab.ResultValue;
+            bool pr = Check_Result();
+           return pr;
         }
 
     }
