@@ -21,5 +21,10 @@ namespace Covide_19_Tracker
         {
 
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

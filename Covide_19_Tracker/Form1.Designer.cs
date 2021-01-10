@@ -43,6 +43,7 @@ namespace Covide_19_Tracker
             this.StField = new System.Windows.Forms.ComboBox();
             this.GenreField = new System.Windows.Forms.Label();
             this.StatutField = new System.Windows.Forms.Label();
+            this.UseCondition = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,12 +195,24 @@ namespace Covide_19_Tracker
             this.StatutField.Text = "Statut";
             this.StatutField.Click += new System.EventHandler(this.StatutField_Click);
             // 
+            // UseCondition
+            // 
+            this.UseCondition.AutoSize = true;
+            this.UseCondition.Location = new System.Drawing.Point(509, 571);
+            this.UseCondition.Name = "UseCondition";
+            this.UseCondition.Size = new System.Drawing.Size(213, 17);
+            this.UseCondition.TabIndex = 18;
+            this.UseCondition.Text = "* I Agree All The Terms And Condutions";
+            this.UseCondition.UseVisualStyleBackColor = true;
+            this.UseCondition.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(949, 741);
+            this.Controls.Add(this.UseCondition);
             this.Controls.Add(this.StatutField);
             this.Controls.Add(this.GenreField);
             this.Controls.Add(this.StField);
@@ -236,6 +249,7 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.ComboBox StField;
         private System.Windows.Forms.Label GenreField;
         private System.Windows.Forms.Label StatutField;
+        private System.Windows.Forms.CheckBox UseCondition;
     }
 }
 
