@@ -28,16 +28,37 @@ namespace Covide_19_Tracker
 
         public String Check_Status()
         {
-            throw new System.NotImplementedException();
+           
+
+            if (Check_Result())
+            {
+                return "Patient";
+            }
+
+            else
+            {
+                return "Normale";
+            }
         }
 
         public bool Check_Result()
         {
-            throw new System.NotImplementedException();
+            Laboratoir lb = new Laboratoir();
+
+            if (lb.ResultValue)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
         }
         public bool Get_Result()
         {
-           return lab.ResultValue;
+            bool pr = Check_Result();
+           return pr;
         }
 
     }

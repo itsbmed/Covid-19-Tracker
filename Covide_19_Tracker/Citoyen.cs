@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Windows.Forms;
 namespace Covide_19_Tracker
 {
     public class Citoyen
@@ -16,75 +17,130 @@ namespace Covide_19_Tracker
         private string genre;
         private string phone;
         private string statut;
+        private String color;
 
-        public int Adress
+
+        public String Adress
         {
-            get ;
-            set;
-            
+            get { return adress; }
+            set { adress = value; }
+
         }
 
-        public int Cni
+        public String Cni
         {
-            get ;
-            set;
-            
+            get { return cni; }
+            set { cni = value; }
+
         }
 
-        public int Date
+        public String Date
         {
-            get;
-            set;
-            
+            get { return date; }
+            set { date = value; }
+
         }
 
-        public int Genre
+        public String Genre
         {
-            get ;
-            set;
-            
+            get { return genre; }
+            set { genre = value; }
+
         }
 
-        public int FullName
+        public String FullName
         {
-            get;
-            set;
+            get { return fullname; }
+            set { fullname = value; }
         }
 
-        public int Phone
+        public String Phone
         {
-            get;
-            set;
-            
+            get { return phone; }
+            set { phone = value; }
+
         }
 
-       
-
-        public int Statut
+        public String Statut
         {
-            get;
-            set;
-            
+            get { return statut; }
+            set {statut = value; }
+
+        }
+
+        public String Color
+        {
+            get { return color; }
+            set { color = value; }
         }
 
         public void SetColor()
         {
-            throw new System.NotImplementedException();
+            Laboratoir lb = new Laboratoir();
+            if (lb.ResultValue)
+            {
+                color = "Red";
+            }
+            else
+            {
+                color = "Normal";
+            }
         }
 
-        public bool CheckEmail()
+        public bool CheckPhone(String  em)
         {
-            throw new System.NotImplementedException();
+            if (em.Trim() != "" && em.Length == 10)
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
         }
 
-        public bool CheckCni()
+        public bool CheckCni(String cn)
         {
-            throw new System.NotImplementedException();
+            if (cn.Trim() != "" && cn.Length == 8)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
-
-        public bool CheckFields()
+        public void insertdata(String Fn,String Cn,String Ad,String Ph, String Bd,String St,String Gn,String Cl)
         {
-            throw new System.NotImplementedException();
+            if (CheckCni(Cni) && CheckPhone(Phone) && CheckFields(FullName,Adress,Statut,Genre,Date))
+            {
+                using (SqlConnection cnx = new SqlConnection(connectionString))
+                {
+                    String Query = "INSERT INTO citoyens(CNI,Fullname,Adress,Phone,Statut,Bdate,Genre,Color) " +
+                    "VALUES('" + Cn + "','" + Fn + "','" + Ad + "','" + Ph + "','" + St + "','" + St + "','" + Bd + "','" + Gn + "','" + Cl + "')";
+
+                    SqlCommand cmd = new SqlCommand(Query, cnx);
+                    if (cnx.State == System.Data.ConnectionState.Open)
+                        cnx.Close();
+                    cnx.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please Check The Fields");
+            }
+           
+        }
+        public bool CheckFields(String fn,String ad,String St,String Gr,String Dt)
+        {
+            if (fn.Trim() != "" && ad.Trim() != "" && St.Trim() != "" && Gr.Trim() != "" && Dt.Trim() != "")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

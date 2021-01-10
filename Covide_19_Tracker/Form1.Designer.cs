@@ -31,11 +31,11 @@ namespace Covide_19_Tracker
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.button1 = new System.Windows.Forms.Button();
-            this.PhField = new System.Windows.Forms.TextBox();
-            this.BtField = new System.Windows.Forms.TextBox();
-            this.CnField = new System.Windows.Forms.TextBox();
-            this.AdField = new System.Windows.Forms.TextBox();
-            this.FnField = new System.Windows.Forms.TextBox();
+            this.Phbox = new System.Windows.Forms.TextBox();
+            this.Bdbox = new System.Windows.Forms.TextBox();
+            this.Cnbox = new System.Windows.Forms.TextBox();
+            this.Adbox = new System.Windows.Forms.TextBox();
+            this.Fnbox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,67 +55,78 @@ namespace Covide_19_Tracker
             this.button1.TabIndex = 0;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Signup);
             // 
-            // PhField
+            // Phbox
             // 
-            this.PhField.BackColor = System.Drawing.SystemColors.Highlight;
-            this.PhField.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhField.ForeColor = System.Drawing.SystemColors.Info;
-            this.PhField.Location = new System.Drawing.Point(509, 351);
-            this.PhField.Name = "PhField";
-            this.PhField.Size = new System.Drawing.Size(385, 32);
-            this.PhField.TabIndex = 1;
-            this.PhField.Text = "Phone";
-            this.PhField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Phbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Phbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Phbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Phbox.Location = new System.Drawing.Point(509, 351);
+            this.Phbox.Name = "Phbox";
+            this.Phbox.Size = new System.Drawing.Size(385, 32);
+            this.Phbox.TabIndex = 1;
+            this.Phbox.Text = "Phone";
+            this.Phbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Phbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Phbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
-            // BtField
+            // Bdbox
             // 
-            this.BtField.BackColor = System.Drawing.SystemColors.Highlight;
-            this.BtField.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtField.ForeColor = System.Drawing.SystemColors.Info;
-            this.BtField.Location = new System.Drawing.Point(509, 415);
-            this.BtField.Name = "BtField";
-            this.BtField.Size = new System.Drawing.Size(385, 32);
-            this.BtField.TabIndex = 2;
-            this.BtField.Text = "Brithday Date";
-            this.BtField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Bdbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Bdbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bdbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Bdbox.Location = new System.Drawing.Point(509, 415);
+            this.Bdbox.Name = "Bdbox";
+            this.Bdbox.Size = new System.Drawing.Size(385, 32);
+            this.Bdbox.TabIndex = 2;
+            this.Bdbox.Text = "Brithday Date";
+            this.Bdbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Bdbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Bdbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
-            // CnField
+            // Cnbox
             // 
-            this.CnField.BackColor = System.Drawing.SystemColors.Highlight;
-            this.CnField.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CnField.ForeColor = System.Drawing.SystemColors.Info;
-            this.CnField.Location = new System.Drawing.Point(509, 223);
-            this.CnField.Name = "CnField";
-            this.CnField.Size = new System.Drawing.Size(385, 32);
-            this.CnField.TabIndex = 4;
-            this.CnField.Text = "Cni";
-            this.CnField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Cnbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Cnbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cnbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Cnbox.Location = new System.Drawing.Point(509, 223);
+            this.Cnbox.Name = "Cnbox";
+            this.Cnbox.Size = new System.Drawing.Size(385, 32);
+            this.Cnbox.TabIndex = 4;
+            this.Cnbox.Text = "Cni";
+            this.Cnbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Cnbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Cnbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
-            // AdField
+            // Adbox
             // 
-            this.AdField.BackColor = System.Drawing.SystemColors.Highlight;
-            this.AdField.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdField.ForeColor = System.Drawing.SystemColors.Info;
-            this.AdField.Location = new System.Drawing.Point(509, 282);
-            this.AdField.Name = "AdField";
-            this.AdField.Size = new System.Drawing.Size(385, 32);
-            this.AdField.TabIndex = 5;
-            this.AdField.Text = "Adress";
-            this.AdField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Adbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Adbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Adbox.Location = new System.Drawing.Point(509, 282);
+            this.Adbox.Name = "Adbox";
+            this.Adbox.Size = new System.Drawing.Size(385, 32);
+            this.Adbox.TabIndex = 5;
+            this.Adbox.Text = "Adress";
+            this.Adbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Adbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Adbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
-            // FnField
+            // Fnbox
             // 
-            this.FnField.BackColor = System.Drawing.SystemColors.Highlight;
-            this.FnField.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FnField.ForeColor = System.Drawing.SystemColors.Info;
-            this.FnField.Location = new System.Drawing.Point(509, 161);
-            this.FnField.Margin = new System.Windows.Forms.Padding(12);
-            this.FnField.Name = "FnField";
-            this.FnField.Size = new System.Drawing.Size(385, 32);
-            this.FnField.TabIndex = 6;
-            this.FnField.Text = "Full Name";
-            this.FnField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Fnbox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Fnbox.Font = new System.Drawing.Font("Rajdhani", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fnbox.ForeColor = System.Drawing.SystemColors.Info;
+            this.Fnbox.Location = new System.Drawing.Point(509, 161);
+            this.Fnbox.Margin = new System.Windows.Forms.Padding(12);
+            this.Fnbox.Name = "Fnbox";
+            this.Fnbox.Size = new System.Drawing.Size(385, 32);
+            this.Fnbox.TabIndex = 6;
+            this.Fnbox.Text = "Full Name";
+            this.Fnbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Fnbox.Enter += new System.EventHandler(this.Focus_Click);
+            this.Fnbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
             // pictureBox1
             // 
@@ -168,7 +179,8 @@ namespace Covide_19_Tracker
             this.StField.FormattingEnabled = true;
             this.StField.Items.AddRange(new object[] {
             "Normale",
-            "Patient"});
+            "Patient",
+            "Vaccine"});
             this.StField.Location = new System.Drawing.Point(757, 514);
             this.StField.Name = "StField";
             this.StField.Size = new System.Drawing.Size(121, 21);
@@ -193,7 +205,6 @@ namespace Covide_19_Tracker
             this.StatutField.Size = new System.Drawing.Size(74, 30);
             this.StatutField.TabIndex = 17;
             this.StatutField.Text = "Statut";
-            this.StatutField.Click += new System.EventHandler(this.StatutField_Click);
             // 
             // UseCondition
             // 
@@ -220,11 +231,11 @@ namespace Covide_19_Tracker
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.FnField);
-            this.Controls.Add(this.AdField);
-            this.Controls.Add(this.CnField);
-            this.Controls.Add(this.BtField);
-            this.Controls.Add(this.PhField);
+            this.Controls.Add(this.Fnbox);
+            this.Controls.Add(this.Adbox);
+            this.Controls.Add(this.Cnbox);
+            this.Controls.Add(this.Bdbox);
+            this.Controls.Add(this.Phbox);
             this.Controls.Add(this.button1);
             this.Name = "SignUp";
             this.Text = "Sign Up";
@@ -237,11 +248,11 @@ namespace Covide_19_Tracker
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox PhField;
-        private System.Windows.Forms.TextBox BtField;
-        private System.Windows.Forms.TextBox CnField;
-        private System.Windows.Forms.TextBox AdField;
-        private System.Windows.Forms.TextBox FnField;
+        private System.Windows.Forms.TextBox Phbox;
+        private System.Windows.Forms.TextBox Bdbox;
+        private System.Windows.Forms.TextBox Cnbox;
+        private System.Windows.Forms.TextBox Adbox;
+        private System.Windows.Forms.TextBox Fnbox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

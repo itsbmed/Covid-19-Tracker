@@ -14,7 +14,17 @@ namespace Covide_19_Tracker
 
         public bool Get_Result()
         {
-            return lab.ResultValue;
+            Laboratoir lb = new Laboratoir();
+
+            if (lb.ResultValue)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
         }
 
     }
