@@ -26,9 +26,19 @@ namespace Covide_19_Tracker
             set;
         }
 
-        public String Check_Status()
+        public bool Check_Status()
         {
-            throw new System.NotImplementedException();
+            Laboratoir lb = new Laboratoir();
+
+            if (lb.ResultValue)
+            {
+                return false;
+            }
+
+            else
+            {
+                return true;
+            }
         }
 
         public bool Check_Result()
