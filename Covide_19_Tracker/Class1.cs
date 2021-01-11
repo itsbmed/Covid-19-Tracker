@@ -15,7 +15,7 @@ namespace Covide_19_Tracker
 
         public String[] Get_Patient(String cni)
         {
-            string[] sdr = new string[5];
+            string[] sdr = new string[8];
             int i = 0;
             using (SqlConnection cnx = new SqlConnection(connectionString))
             {
