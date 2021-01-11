@@ -93,9 +93,8 @@ namespace Covide_19_Tracker
             this.Usercni.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold);
             this.Usercni.Location = new System.Drawing.Point(445, 253);
             this.Usercni.Name = "Usercni";
-            this.Usercni.Size = new System.Drawing.Size(106, 30);
+            this.Usercni.Size = new System.Drawing.Size(0, 30);
             this.Usercni.TabIndex = 4;
-            this.Usercni.Text = "XA137230";
             // 
             // Userage
             // 
@@ -103,9 +102,8 @@ namespace Covide_19_Tracker
             this.Userage.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold);
             this.Userage.Location = new System.Drawing.Point(445, 283);
             this.Userage.Name = "Userage";
-            this.Userage.Size = new System.Drawing.Size(34, 30);
+            this.Userage.Size = new System.Drawing.Size(0, 30);
             this.Userage.TabIndex = 5;
-            this.Userage.Text = "19";
             // 
             // Userstatut
             // 
@@ -114,9 +112,8 @@ namespace Covide_19_Tracker
             this.Userstatut.ForeColor = System.Drawing.Color.LimeGreen;
             this.Userstatut.Location = new System.Drawing.Point(445, 373);
             this.Userstatut.Name = "Userstatut";
-            this.Userstatut.Size = new System.Drawing.Size(71, 30);
+            this.Userstatut.Size = new System.Drawing.Size(0, 30);
             this.Userstatut.TabIndex = 6;
-            this.Userstatut.Text = "Green";
             // 
             // label1
             // 
@@ -146,9 +143,8 @@ namespace Covide_19_Tracker
             this.Userphone.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold);
             this.Userphone.Location = new System.Drawing.Point(445, 313);
             this.Userphone.Name = "Userphone";
-            this.Userphone.Size = new System.Drawing.Size(135, 30);
+            this.Userphone.Size = new System.Drawing.Size(0, 30);
             this.Userphone.TabIndex = 9;
-            this.Userphone.Text = "0639423357";
             // 
             // Useradress
             // 
@@ -156,9 +152,8 @@ namespace Covide_19_Tracker
             this.Useradress.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold);
             this.Useradress.Location = new System.Drawing.Point(445, 343);
             this.Useradress.Name = "Useradress";
-            this.Useradress.Size = new System.Drawing.Size(167, 30);
+            this.Useradress.Size = new System.Drawing.Size(0, 30);
             this.Useradress.TabIndex = 10;
-            this.Useradress.Text = "Nabawiya 3 N14";
             // 
             // button1
             // 

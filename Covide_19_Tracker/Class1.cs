@@ -13,8 +13,10 @@ namespace Covide_19_Tracker
         String connectionString = ConfigurationManager.ConnectionStrings["CnxToSql"].ConnectionString;
 
 
-        public SqlDataReader Get_Patient(String cni)
+        public String[] Get_Patient(String cni)
         {
+            string[] sdr = new string[5];
+            int i = 0;
             using (SqlConnection cnx = new SqlConnection(connectionString))
             {
                 String Query = "SELECT * FROM citoyens WHERE CNI=  '" + cni + "' ";
@@ -24,8 +26,11 @@ namespace Covide_19_Tracker
                     cnx.Close();
                 cnx.Open();
                 SqlDataReader rd = cmd.ExecuteReader();
-                cmd.ExecuteNonQuery();
-                return rd;
+                while (rd.Read())
+                {
+                    sdr[i] = rd[i].ToString();
+                }
+                return sdr;
             }
         }
     }
