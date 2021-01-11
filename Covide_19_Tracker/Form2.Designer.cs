@@ -38,8 +38,8 @@ namespace Covide_19_Tracker
             this.Userstatut = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.Userphone = new System.Windows.Forms.Label();
+            this.Useradress = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -140,25 +140,25 @@ namespace Covide_19_Tracker
             this.label5.TabIndex = 8;
             this.label5.Text = "Adress:";
             // 
-            // label6
+            // Userphone
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(445, 313);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 30);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "0639423357";
+            this.Userphone.AutoSize = true;
+            this.Userphone.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold);
+            this.Userphone.Location = new System.Drawing.Point(445, 313);
+            this.Userphone.Name = "Userphone";
+            this.Userphone.Size = new System.Drawing.Size(135, 30);
+            this.Userphone.TabIndex = 9;
+            this.Userphone.Text = "0639423357";
             // 
-            // label7
+            // Useradress
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(445, 343);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 30);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Nabawiya 3 N14";
+            this.Useradress.AutoSize = true;
+            this.Useradress.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold);
+            this.Useradress.Location = new System.Drawing.Point(445, 343);
+            this.Useradress.Name = "Useradress";
+            this.Useradress.Size = new System.Drawing.Size(167, 30);
+            this.Useradress.TabIndex = 10;
+            this.Useradress.Text = "Nabawiya 3 N14";
             // 
             // button1
             // 
@@ -182,8 +182,8 @@ namespace Covide_19_Tracker
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(910, 532);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Useradress);
+            this.Controls.Add(this.Userphone);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Userstatut);
@@ -212,8 +212,8 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.Label Userstatut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label Userphone;
+        private System.Windows.Forms.Label Useradress;
         private System.Windows.Forms.Button button1;
     }
 }
