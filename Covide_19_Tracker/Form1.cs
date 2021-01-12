@@ -67,7 +67,9 @@ namespace Covide_19_Tracker
         {
 
             ct.insertdata( ct.FullName, ct.Cni, ct.Adress,ct.Phone,  ct.Date, ct.Genre, ct.Statut,  ct.Color ) ;
-
+            this.Hide();
+            Home home = new Home();
+            home.Show();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

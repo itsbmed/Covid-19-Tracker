@@ -167,8 +167,8 @@ namespace Covide_19_Tracker
             // 
             this.GrField.FormattingEnabled = true;
             this.GrField.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
+            "M",
+            "F"});
             this.GrField.Location = new System.Drawing.Point(509, 514);
             this.GrField.Name = "GrField";
             this.GrField.Size = new System.Drawing.Size(121, 21);
