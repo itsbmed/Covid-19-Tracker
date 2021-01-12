@@ -62,11 +62,19 @@ namespace Covide_19_Tracker
                 tb.Text = t;
             }
         }
-
+       
         private void Signup(object sender, EventArgs e)
         {
-
-            ct.insertdata( ct.FullName, ct.Cni, ct.Adress,ct.Phone,  ct.Date, ct.Genre, ct.Statut,  ct.Color ) ;
+            ct.FullName = Fnbox.Text;
+            ct.Cni = Cnbox.Text;
+            ct.Adress = Adbox.Text;
+            ct.Phone = Phbox.Text;
+            ct.Date = Bdbox.Text;
+            ct.Genre = GrField.GetItemText(this.GrField.SelectedItem);
+            ct.Statut = StField.GetItemText(this.StField.SelectedItem);
+            MessageBox.Show(ct.Genre);
+            MessageBox.Show(ct.Statut);
+            ct.insertdata( ct.FullName, ct.Cni, ct.Adress,ct.Phone,  ct.Date, ct.Statut, ct.Genre,  ct.Color ) ;
             this.Hide();
             Home home = new Home();
             home.Show();

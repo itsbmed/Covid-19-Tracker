@@ -91,10 +91,10 @@ namespace Covide_19_Tracker
         {
             if (em.Trim() != "" && em.Length == 10)
             {
-                return false;
+                return true;
             }
             else {
-                return true;
+                return false;
             }
         }
 
@@ -102,21 +102,21 @@ namespace Covide_19_Tracker
         {
             if (cn.Trim() != "" && cn.Length == 8)
             {
-                return false;
+                return true;
             }
             else
             {
-                return true;
+                return false;
             }
         }
         public void insertdata(String Fn,String Cn,String Ad,String Ph, String Bd,String St,String Gn,String Cl)
         {
             if (CheckCni(Cni) && CheckPhone(Phone) && CheckFields(FullName,Adress,Statut,Genre,Date))
             {
-                using (SqlConnection cnx = new SqlConnection(connectionString))
+                using (SqlConnection cnx = new SqlConnection(connectionString)) 
                 {
                     String Query = "INSERT INTO citoyens(CNI,Fullname,Adress,Phone,Statut,Bdate,Genre,Color) " +
-                    "VALUES('" + Cn + "','" + Fn + "','" + Ad + "','" + Ph + "','" + St + "','" + St + "','" + Bd + "','" + Gn + "','" + Cl + "')";
+                    "VALUES('" + Cn + "','" + Fn + "','" + Ad + "','" + Ph + "','" + St + "','" + Bd + "','" + Gn + "','" + Cl + "')";
 
                     SqlCommand cmd = new SqlCommand(Query, cnx);
                     if (cnx.State == System.Data.ConnectionState.Open)
@@ -135,11 +135,11 @@ namespace Covide_19_Tracker
         {
             if (fn.Trim() != "" && ad.Trim() != "" && St.Trim() != "" && Gr.Trim() != "" && Dt.Trim() != "")
             {
-                return false;
+                return true;
             }
             else
             {
-                return true;
+                return false;
             }
         }
     }

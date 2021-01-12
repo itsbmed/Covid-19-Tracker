@@ -178,9 +178,10 @@ namespace Covide_19_Tracker
             // 
             this.StField.FormattingEnabled = true;
             this.StField.Items.AddRange(new object[] {
-            "Normale",
+            "Normal",
             "Patient",
-            "Vaccine"});
+            "Vaccine",
+            "Possible"});
             this.StField.Location = new System.Drawing.Point(757, 514);
             this.StField.Name = "StField";
             this.StField.Size = new System.Drawing.Size(121, 21);
