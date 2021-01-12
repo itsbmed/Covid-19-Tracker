@@ -28,7 +28,15 @@ namespace Covide_19_Tracker
                 SqlDataReader rd = cmd.ExecuteReader();
                 while (rd.Read())
                 {
-                    sdr[i] = rd[i].ToString();
+                    sdr[0] = rd[0].ToString();
+                    sdr[1] = rd[1].ToString();
+                    sdr[2] = rd[2].ToString();
+                    sdr[3] = rd[3].ToString();
+                    sdr[4] = rd[4].ToString();
+                    sdr[5] = rd[5].ToString();
+                    sdr[7] = rd[6].ToString();
+                    sdr[8] = rd[7].ToString();
+                    sdr[9] = rd[8].ToString();
                 }
                 return sdr;
             }

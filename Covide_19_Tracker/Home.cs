@@ -62,6 +62,10 @@ namespace Covide_19_Tracker
                     f2.Userstatut.ForeColor = System.Drawing.Color.Green;
                 }
             }
+            else
+            {
+                MessageBox.Show("CNI PAS VALIDE");
+            }
             
             
         }

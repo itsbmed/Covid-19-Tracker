@@ -15,13 +15,10 @@ namespace Covide_19_Tracker
        
         public Form2()
         {
-           
+            InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-           
-        }
+      
         
         private void Search(object sender, EventArgs e)
         {
@@ -51,6 +48,11 @@ namespace Covide_19_Tracker
                 {
                     Userstatut.ForeColor = System.Drawing.Color.Green;
                 }
+
+            }
+            else
+            {
+                MessageBox.Show("CNI PAS VALIDE");
             }
         }
     }
