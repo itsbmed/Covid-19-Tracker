@@ -69,5 +69,12 @@ namespace Covide_19_Tracker
             
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUp sg = new SignUp();
+            sg.Show();
+        }
     }
 }

@@ -34,9 +34,9 @@ namespace Covide_19_Tracker
                     sdr[3] = rd[3].ToString();
                     sdr[4] = rd[4].ToString();
                     sdr[5] = rd[5].ToString();
-                    sdr[7] = rd[6].ToString();
-                    sdr[8] = rd[7].ToString();
-                    sdr[9] = rd[8].ToString();
+                    sdr[6] = rd[6].ToString();
+                    sdr[7] = rd[7].ToString();
+                    
                 }
                 return sdr;
             }

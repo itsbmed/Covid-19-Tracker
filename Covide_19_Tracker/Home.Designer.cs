@@ -41,6 +41,8 @@ namespace Covide_19_Tracker
             this.Normalebox = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.SearchButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Searchbox
@@ -172,12 +174,41 @@ namespace Covide_19_Tracker
             this.SearchButton.UseVisualStyleBackColor = true;
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.Font = new System.Drawing.Font("Goldman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(464, 368);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(181, 48);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "REGISTRE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(110, 375);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(296, 30);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Help Us To Track This Viruse :";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Normalebox);
             this.Controls.Add(this.Possiblebox);
@@ -212,5 +243,7 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.Label Possiblebox;
         private System.Windows.Forms.Label Normalebox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
     }
 }
