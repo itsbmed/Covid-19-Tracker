@@ -16,7 +16,7 @@ namespace Covide_19_Tracker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SignUp());
+            Application.Run(new Form2());
         }
     }
 }

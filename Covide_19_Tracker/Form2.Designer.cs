@@ -41,6 +41,8 @@ namespace Covide_19_Tracker
             this.Userphone = new System.Windows.Forms.Label();
             this.Useradress = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.Searchbox = new System.Windows.Forms.TextBox();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Username
@@ -50,9 +52,9 @@ namespace Covide_19_Tracker
             this.Username.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Username.Location = new System.Drawing.Point(317, 150);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(295, 56);
+            this.Username.Size = new System.Drawing.Size(31, 56);
             this.Username.TabIndex = 0;
-            this.Username.Text = "MOHAMMED BELACHHAB";
+            this.Username.Text = " ";
             // 
             // label2
             // 
@@ -163,12 +165,31 @@ namespace Covide_19_Tracker
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Goldman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(717, 25);
+            this.button1.Location = new System.Drawing.Point(717, 19);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 48);
             this.button1.TabIndex = 11;
             this.button1.Text = "Edit Profile";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // Searchbox
+            // 
+            this.Searchbox.Font = new System.Drawing.Font("Goldman", 18F);
+            this.Searchbox.Location = new System.Drawing.Point(21, 25);
+            this.Searchbox.Name = "Searchbox";
+            this.Searchbox.Size = new System.Drawing.Size(164, 36);
+            this.Searchbox.TabIndex = 12;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BackgroundImage = global::Covide_19_Tracker.Properties.Resources.SI;
+            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SearchButton.Location = new System.Drawing.Point(180, 25);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(39, 36);
+            this.SearchButton.TabIndex = 13;
+            this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.Search);
             // 
             // Form2
             // 
@@ -176,6 +197,8 @@ namespace Covide_19_Tracker
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(910, 532);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.Searchbox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Useradress);
             this.Controls.Add(this.Userphone);
@@ -210,5 +233,7 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.Label Userphone;
         private System.Windows.Forms.Label Useradress;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox Searchbox;
+        private System.Windows.Forms.Button SearchButton;
     }
 }
