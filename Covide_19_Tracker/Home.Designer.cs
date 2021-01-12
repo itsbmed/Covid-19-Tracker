@@ -29,29 +29,19 @@ namespace Covide_19_Tracker
         /// </summary>
         private void InitializeComponent()
         {
-            this.SearchButton = new System.Windows.Forms.Button();
             this.Searchbox = new System.Windows.Forms.TextBox();
             this.Vaccine = new System.Windows.Forms.Label();
             this.Patient = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Patientbox = new System.Windows.Forms.Label();
+            this.Vaccinebox = new System.Windows.Forms.Label();
+            this.Possiblebox = new System.Windows.Forms.Label();
+            this.Normalebox = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // SearchButton
-            // 
-            this.SearchButton.BackgroundImage = global::Covide_19_Tracker.Properties.Resources.SI;
-            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SearchButton.Location = new System.Drawing.Point(664, 229);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(39, 36);
-            this.SearchButton.TabIndex = 15;
-            this.SearchButton.UseVisualStyleBackColor = true;
             // 
             // Searchbox
             // 
@@ -116,49 +106,49 @@ namespace Covide_19_Tracker
             this.Username.TabIndex = 20;
             this.Username.Text = " Hey, Welcome To Covid-19-Tracker";
             // 
-            // label3
+            // Patientbox
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(222, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 30);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "1500";
+            this.Patientbox.AutoSize = true;
+            this.Patientbox.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patientbox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Patientbox.Location = new System.Drawing.Point(222, 141);
+            this.Patientbox.Name = "Patientbox";
+            this.Patientbox.Size = new System.Drawing.Size(59, 30);
+            this.Patientbox.TabIndex = 21;
+            this.Patientbox.Text = "1500";
             // 
-            // label4
+            // Vaccinebox
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(222, 184);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 30);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "120";
+            this.Vaccinebox.AutoSize = true;
+            this.Vaccinebox.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vaccinebox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Vaccinebox.Location = new System.Drawing.Point(222, 184);
+            this.Vaccinebox.Name = "Vaccinebox";
+            this.Vaccinebox.Size = new System.Drawing.Size(46, 30);
+            this.Vaccinebox.TabIndex = 22;
+            this.Vaccinebox.Text = "120";
             // 
-            // label5
+            // Possiblebox
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(222, 229);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 30);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "131";
+            this.Possiblebox.AutoSize = true;
+            this.Possiblebox.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Possiblebox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Possiblebox.Location = new System.Drawing.Point(222, 229);
+            this.Possiblebox.Name = "Possiblebox";
+            this.Possiblebox.Size = new System.Drawing.Size(41, 30);
+            this.Possiblebox.TabIndex = 23;
+            this.Possiblebox.Text = "131";
             // 
-            // label6
+            // Normalebox
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(222, 273);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 30);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "1865";
+            this.Normalebox.AutoSize = true;
+            this.Normalebox.Font = new System.Drawing.Font("Rajdhani", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Normalebox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Normalebox.Location = new System.Drawing.Point(222, 273);
+            this.Normalebox.Name = "Normalebox";
+            this.Normalebox.Size = new System.Drawing.Size(59, 30);
+            this.Normalebox.TabIndex = 24;
+            this.Normalebox.Text = "1865";
             // 
             // label7
             // 
@@ -171,6 +161,16 @@ namespace Covide_19_Tracker
             this.label7.TabIndex = 25;
             this.label7.Text = "Search For A Patient :";
             // 
+            // SearchButton
+            // 
+            this.SearchButton.BackgroundImage = global::Covide_19_Tracker.Properties.Resources.SI;
+            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SearchButton.Location = new System.Drawing.Point(664, 229);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(39, 36);
+            this.SearchButton.TabIndex = 15;
+            this.SearchButton.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,10 +178,10 @@ namespace Covide_19_Tracker
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Normalebox);
+            this.Controls.Add(this.Possiblebox);
+            this.Controls.Add(this.Vaccinebox);
+            this.Controls.Add(this.Patientbox);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -191,6 +191,7 @@ namespace Covide_19_Tracker
             this.Controls.Add(this.Searchbox);
             this.Name = "Home";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,10 +206,10 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Username;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Patientbox;
+        private System.Windows.Forms.Label Vaccinebox;
+        private System.Windows.Forms.Label Possiblebox;
+        private System.Windows.Forms.Label Normalebox;
         private System.Windows.Forms.Label label7;
     }
 }
