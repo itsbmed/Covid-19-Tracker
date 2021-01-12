@@ -35,8 +35,12 @@ namespace Covide_19_Tracker
         }
         public String[] Get_Data(String cni)
         {
-            string[] sdr = new string[8];
-            int i = 0;
+            string[] gt = new string[4];
+            string r1 = "";
+            string r2 = "";
+            string r3 = "";
+            string r4 = "";
+
             using (SqlConnection cnx = new SqlConnection(connectionString))
             {
                 String Query1 = "SELECT Count(Statut) AS Ct FROM citoyens Where Statut = 'Patient'";
@@ -58,21 +62,23 @@ namespace Covide_19_Tracker
                 SqlDataReader rd4 = cmd4.ExecuteReader();
                 while (rd1.Read())
                 {
-                    sdr[i] = rd1[i].ToString();
+                   r1 = rd1["ct"].ToString();
+                    
                 }
                 while (rd2.Read())
                 {
-                    sdr[i] = rd1[i].ToString();
+                    r2 = rd2["ct"].ToString();
                 }
                 while (rd3.Read())
                 {
-                    sdr[i] = rd1[i].ToString();
+                    r3 = rd3["ct"].ToString();
                 }
                 while (rd4.Read())
                 {
-                    sdr[i] = rd1[i].ToString();
+                    r4 = rd4["ct"].ToString();
                 }
-                return sdr;
+                gt[0] = r1; gt[1] = r2; gt[2] = r3; gt[3] = r4;
+                return gt;
             }
         }
     }
