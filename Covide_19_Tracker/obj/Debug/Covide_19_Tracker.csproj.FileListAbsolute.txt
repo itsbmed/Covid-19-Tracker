@@ -9,3 +9,4 @@ C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_1
 C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.exe
 C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.pdb
 C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.Form2.resources
+C:\Users\Imad\source\repos\Covid-19-Tracker\Covide_19_Tracker\obj\Debug\Covide_19_Tracker.Home.resources

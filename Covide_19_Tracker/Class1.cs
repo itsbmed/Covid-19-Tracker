@@ -46,7 +46,7 @@ namespace Covide_19_Tracker
                 String Query1 = "SELECT Count(Statut) AS Ct FROM citoyens Where Statut = 'Patient'";
                 String Query2 = "SELECT Count(Statut) AS Ct FROM citoyens Where Statut = 'Vaccine'";
                 String Query3 = "SELECT Count(Statut) AS Ct FROM citoyens Where Statut = 'Possible'";
-                String Query4 = "SELECT Count(Statut) AS Ct FROM citoyens Where Statut = 'Normale'";
+                String Query4 = "SELECT Count(Statut) AS Ct FROM citoyens Where Statut = 'Normal'";
 
                 SqlCommand cmd1 = new SqlCommand(Query1, cnx);
                 SqlCommand cmd2 = new SqlCommand(Query2, cnx);
@@ -57,22 +57,32 @@ namespace Covide_19_Tracker
                     cnx.Close();
                 cnx.Open();
                 SqlDataReader rd1 = cmd1.ExecuteReader();
-                SqlDataReader rd2 = cmd2.ExecuteReader();
-                SqlDataReader rd3 = cmd3.ExecuteReader();
-                SqlDataReader rd4 = cmd4.ExecuteReader();
                 while (rd1.Read())
                 {
-                   r1 = rd1["ct"].ToString();
-                    
+                    r1 = rd1["ct"].ToString();
+
                 }
+                cnx.Close();
+                cnx.Open();
+               
+                
+                SqlDataReader rd2 = cmd2.ExecuteReader();
                 while (rd2.Read())
                 {
                     r2 = rd2["ct"].ToString();
                 }
+                cnx.Close();
+                cnx.Open();
+                SqlDataReader rd3 = cmd3.ExecuteReader();
+
+
                 while (rd3.Read())
                 {
                     r3 = rd3["ct"].ToString();
                 }
+                cnx.Close();
+                cnx.Open();
+                SqlDataReader rd4 = cmd4.ExecuteReader();
                 while (rd4.Read())
                 {
                     r4 = rd4["ct"].ToString();
