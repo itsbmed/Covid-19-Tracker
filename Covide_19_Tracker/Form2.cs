@@ -28,7 +28,7 @@ namespace Covide_19_Tracker
                 Username.Text = pr.Get_Patient(Searchbox.Text)[1];
                 Usercni.Text = pr.Get_Patient(Searchbox.Text)[0];
                 Userage.Text = pr.Get_Patient(Searchbox.Text)[5];
-                Userphone.Text = pr.Get_Patient(Searchbox.Text)[5];
+                Userphone.Text = pr.Get_Patient(Searchbox.Text)[3];
                 Useradress.Text = pr.Get_Patient(Searchbox.Text)[2];
                 Userstatut.Text = pr.Get_Patient(Searchbox.Text)[4];
 

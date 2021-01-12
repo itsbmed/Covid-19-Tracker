@@ -10,13 +10,13 @@ namespace Covide_19_Tracker
     public class Citoyen
     {
         String connectionString = ConfigurationManager.ConnectionStrings["CnxToSql"].ConnectionString;
-        private string fullname;
-        private string cni;
-        private string adress;
-        private string date;
-        private string genre;
-        private string phone;
-        private string statut;
+        private String fullname;
+        private String cni;
+        private String adress;
+        private String date;
+        private String genre;
+        private String phone;
+        private String statut;
         private String color;
 
 

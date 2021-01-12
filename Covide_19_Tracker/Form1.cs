@@ -28,13 +28,17 @@ namespace Covide_19_Tracker
             ct.Adress = Adbox.Text;
             ct.Phone = Phbox.Text;
             ct.Date = Bdbox.Text;
-            ct.Genre = GrField.Text;
-            ct.Statut = StField.Text;
+            ct.Genre = GrField.GetItemText(this.GrField.SelectedItem);
+            ct.Statut = StField.GetItemText(this.StField.SelectedItem);
             if (ct.Statut == "Normal")
             {
                 ct.Color = "Green";
             }
-            else if(ct.Statut == "vaccine")
+            else if(ct.Statut == "Vaccine")
+            {
+                ct.Color = "Blue";
+            }
+            else if (ct.Statut == "Possible")
             {
                 ct.Color = "Blue";
             }
@@ -65,15 +69,8 @@ namespace Covide_19_Tracker
        
         private void Signup(object sender, EventArgs e)
         {
-            ct.FullName = Fnbox.Text;
-            ct.Cni = Cnbox.Text;
-            ct.Adress = Adbox.Text;
-            ct.Phone = Phbox.Text;
-            ct.Date = Bdbox.Text;
-            ct.Genre = GrField.GetItemText(this.GrField.SelectedItem);
-            ct.Statut = StField.GetItemText(this.StField.SelectedItem);
-            MessageBox.Show(ct.Genre);
-            MessageBox.Show(ct.Statut);
+
+            setdata();
             ct.insertdata( ct.FullName, ct.Cni, ct.Adress,ct.Phone,  ct.Date, ct.Statut, ct.Genre,  ct.Color ) ;
             this.Hide();
             Home home = new Home();
