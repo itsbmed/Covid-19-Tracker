@@ -28,5 +28,42 @@ namespace Covide_19_Tracker
 
            
         }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            if (Searchbox.Text.Length == 8)
+            {
+                this.Hide();
+                Form2 f2 = new Form2();
+                f2.Show();
+                Persistance pr = new Persistance();
+                
+                f2.Username.Text = pr.Get_Patient(Searchbox.Text)[1];
+                f2.Usercni.Text = pr.Get_Patient(Searchbox.Text)[0];
+                f2.Userage.Text = pr.Get_Patient(Searchbox.Text)[5];
+                f2.Userphone.Text = pr.Get_Patient(Searchbox.Text)[5];
+                f2.Useradress.Text = pr.Get_Patient(Searchbox.Text)[2];
+                f2.Userstatut.Text = pr.Get_Patient(Searchbox.Text)[4];
+
+                if (f2.Userstatut.Text == "Patient")
+                {
+                    f2.Userstatut.ForeColor = System.Drawing.Color.Red;
+                }
+                else if (f2.Userstatut.Text == "Vaccine")
+                {
+                    f2.Userstatut.ForeColor = System.Drawing.Color.Blue;
+                }
+                else if (f2.Userstatut.Text == "PatPont")
+                {
+                    f2.Userstatut.ForeColor = System.Drawing.Color.Orange;
+                }
+                else
+                {
+                    f2.Userstatut.ForeColor = System.Drawing.Color.Green;
+                }
+            }
+            
+            
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace Covide_19_Tracker
         {
            
         }
-
+        
         private void Search(object sender, EventArgs e)
         {
             if(Searchbox.Text.Length == 8)

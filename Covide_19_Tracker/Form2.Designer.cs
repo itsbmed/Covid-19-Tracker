@@ -221,17 +221,17 @@ namespace Covide_19_Tracker
 
         #endregion
 
-        private System.Windows.Forms.Label Username;
+        public System.Windows.Forms.Label Username;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label Usercni;
-        private System.Windows.Forms.Label Userage;
-        private System.Windows.Forms.Label Userstatut;
+        public System.Windows.Forms.Label Usercni;
+        public System.Windows.Forms.Label Userage;
+        public System.Windows.Forms.Label Userstatut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label Userphone;
-        private System.Windows.Forms.Label Useradress;
+        public System.Windows.Forms.Label Userphone;
+        public System.Windows.Forms.Label Useradress;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox Searchbox;
         private System.Windows.Forms.Button SearchButton;

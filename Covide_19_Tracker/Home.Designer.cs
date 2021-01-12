@@ -170,6 +170,7 @@ namespace Covide_19_Tracker
             this.SearchButton.Size = new System.Drawing.Size(39, 36);
             this.SearchButton.TabIndex = 15;
             this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // Home
             // 
