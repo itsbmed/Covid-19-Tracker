@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Windows.Forms;
 namespace Covide_19_Tracker
 {
     
@@ -40,6 +41,24 @@ namespace Covide_19_Tracker
                 }
                 return sdr;
             }
+        }
+        public void Updates(String pora,String poravalue,String cni)
+        {
+            using (SqlConnection cnx = new SqlConnection(connectionString))
+            {
+                String Query = "UPDATE citoyens SET "+ pora + " =  '" + poravalue + "' WHERE CNI =  '" + cni + "'";
+
+
+                SqlCommand cmd = new SqlCommand(Query, cnx);
+                if (cnx.State == System.Data.ConnectionState.Open)
+                    cnx.Close();
+                cnx.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Record Inserted!");
+                
+
+            }
+            
         }
         public String[] Get_Data(String cni)
         {

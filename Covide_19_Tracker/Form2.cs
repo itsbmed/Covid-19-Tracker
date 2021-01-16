@@ -55,5 +55,12 @@ namespace Covide_19_Tracker
                 MessageBox.Show("CNI PAS VALIDE");
             }
         }
+
+        private void updates(object sender, EventArgs e)
+        {
+            this.Hide();
+            Updates updates = new Updates();
+            updates.Show();
+        }
     }
 }
