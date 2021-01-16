@@ -73,7 +73,7 @@ namespace Covide_19_Tracker
             setdata();
             ct.insertdata( ct.FullName, ct.Cni, ct.Adress,ct.Phone,  ct.Date, ct.Statut, ct.Genre,  ct.Color ) ;
             this.Hide();
-            Home home = new Home();
+            User_Home home = new User_Home();
             home.Show();
         }
 
