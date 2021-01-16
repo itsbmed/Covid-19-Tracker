@@ -10,24 +10,13 @@ using System.Windows.Forms;
 
 namespace Covide_19_Tracker
 {
-    public partial class Home : Form
+    public partial class Form4 : Form
     {
-        public Home()
+        public Form4()
         {
             InitializeComponent();
         }
-
-        private void Home_Load(object sender, EventArgs e)
-        {
-            Persistance pr = new Persistance();
-            Patientbox.Text = pr.Get_Data(Searchbox.Text)[0];
-            Vaccinebox.Text = pr.Get_Data(Searchbox.Text)[1];
-            Possiblebox.Text = pr.Get_Data(Searchbox.Text)[2];
-            Normalebox.Text = pr.Get_Data(Searchbox.Text)[3];
-            
-
-           
-        }
+        
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
@@ -37,7 +26,7 @@ namespace Covide_19_Tracker
                 Form2 f2 = new Form2();
                 f2.Show();
                 Persistance pr = new Persistance();
-                
+
                 f2.Username.Text = pr.Get_Patient(Searchbox.Text)[1];
                 f2.Usercni.Text = pr.Get_Patient(Searchbox.Text)[0];
                 f2.Userage.Text = pr.Get_Patient(Searchbox.Text)[5];
@@ -66,15 +55,17 @@ namespace Covide_19_Tracker
             {
                 MessageBox.Show("CNI PAS VALIDE");
             }
-            
-            
+
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void User_Home_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            SignUp sg = new SignUp();
-            sg.Show();
+            Persistance pr = new Persistance();
+            Patientbox.Text = pr.Get_Data(Searchbox.Text)[0];
+            Vaccinebox.Text = pr.Get_Data(Searchbox.Text)[1];
+            Possiblebox.Text = pr.Get_Data(Searchbox.Text)[2];
+            Normalebox.Text = pr.Get_Data(Searchbox.Text)[3];
         }
     }
 }

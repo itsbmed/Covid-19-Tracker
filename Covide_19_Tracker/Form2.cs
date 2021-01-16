@@ -40,7 +40,7 @@ namespace Covide_19_Tracker
                 {
                     Userstatut.ForeColor = System.Drawing.Color.Blue;
                 }
-                else if (Userstatut.Text == "PatPont")
+                else if (Userstatut.Text == "Possible")
                 {
                     Userstatut.ForeColor = System.Drawing.Color.Orange;
                 }

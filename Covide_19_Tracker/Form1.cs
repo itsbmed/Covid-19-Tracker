@@ -40,7 +40,7 @@ namespace Covide_19_Tracker
             }
             else if (ct.Statut == "Possible")
             {
-                ct.Color = "Blue";
+                ct.Color = "Orange";
             }
             else {
                 ct.Color = "Red";
