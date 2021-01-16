@@ -28,7 +28,11 @@ namespace Covide_19_Tracker
 
            
         }
-
+        public String cinivalue1()
+        {
+            Persistance pr = new Persistance();
+            return   pr.Get_Patient(Searchbox.Text)[0];
+        }
         private void SearchButton_Click(object sender, EventArgs e)
         {
             if (Searchbox.Text.Length == 8)

@@ -60,6 +60,7 @@ namespace Covide_19_Tracker
             }
             
         }
+       
         public String[] Get_Data(String cni)
         {
             string[] gt = new string[4];

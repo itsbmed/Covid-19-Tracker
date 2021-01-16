@@ -18,8 +18,20 @@ namespace Covide_19_Tracker
             InitializeComponent();
         }
 
-      
-        
+        public String cnivalue()
+        {
+            if (Usercni.Text != "")
+            {
+                return Usercni.Text;
+            }
+            else
+            {
+                Home hm = new Home();
+                return hm.cinivalue1();
+            }
+            
+        }
+
         private void Search(object sender, EventArgs e)
         {
             if(Searchbox.Text.Length == 8)

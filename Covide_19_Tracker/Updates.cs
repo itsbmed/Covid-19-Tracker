@@ -23,17 +23,22 @@ namespace Covide_19_Tracker
             {
                 phoneoradress.Text = "Adress";
 
-
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Persistance pr = new Persistance();
-            pr.Updates(pora.GetItemText(this.pora.SelectedItem),proavalue.Text, "XA137230");
-            this.Close();
-            User_Home home = new User_Home();
-            home.Show();
+            if (proavalue.Text != "")
+            {
+                Persistance pr = new Persistance();
+                Form2 fr2 = new Form2();
+                MessageBox.Show(fr2.cnivalue());
+                pr.Updates(pora.GetItemText(this.pora.SelectedItem), proavalue.Text, fr2.Usercni.Text);
+                this.Close();
+                User_Home home = new User_Home();
+                home.Show();
+            }
+            MessageBox.Show("Please Check Your Fields");
         }
     }
 }
