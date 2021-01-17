@@ -35,8 +35,7 @@ namespace Covide_19_Tracker
                 this.Hide();
                 Form2 f2 = new Form2();
                 f2.Show();
-                Persistance pr = new Persistance();
-
+                Persistance pr = new Persistance(); 
                 f2.Username.Text = pr.Get_Patient(Searchbox.Text)[1];
                 f2.Usercni.Text = pr.Get_Patient(Searchbox.Text)[0];
                 f2.Userage.Text = pr.Get_Patient(Searchbox.Text)[5];

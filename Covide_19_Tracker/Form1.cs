@@ -18,7 +18,6 @@ namespace Covide_19_Tracker
         public SignUp()
         {
 
-
             InitializeComponent();
         }
         public void setdata()

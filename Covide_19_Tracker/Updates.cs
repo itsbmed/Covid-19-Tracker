@@ -12,6 +12,12 @@ namespace Covide_19_Tracker
 {
     public partial class Updates : Form
     {
+        private String cn;
+        public String Cn
+        {
+            get { return cn; }
+            set { cn = value; }
+        }
         public Updates()
         {
             InitializeComponent();
@@ -22,23 +28,27 @@ namespace Covide_19_Tracker
             if (pora.GetItemText(this.pora.SelectedItem) == "Adress")
             {
                 phoneoradress.Text = "Adress";
-
+                MessageBox.Show(cn);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (proavalue.Text != "")
+            if (proavalue.Text != "" && Cn != "")
             {
                 Persistance pr = new Persistance();
-                Form2 fr2 = new Form2();
-                MessageBox.Show(fr2.cnivalue());
-                pr.Updates(pora.GetItemText(this.pora.SelectedItem), proavalue.Text, fr2.Usercni.Text);
+                
+                MessageBox.Show(cn);
+                pr.Updates(pora.GetItemText(this.pora.SelectedItem), proavalue.Text,cn);
                 this.Close();
                 User_Home home = new User_Home();
                 home.Show();
             }
-            MessageBox.Show("Please Check Your Fields");
+            else
+            {
+                MessageBox.Show("Please Check Your Fields");
+            }
+            
         }
     }
 }

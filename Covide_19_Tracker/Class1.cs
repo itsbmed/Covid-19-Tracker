@@ -54,7 +54,7 @@ namespace Covide_19_Tracker
                     cnx.Close();
                 cnx.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Record Inserted!");
+                MessageBox.Show("The Profile Was Updated");
                 
 
             }
