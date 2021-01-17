@@ -28,13 +28,17 @@ namespace Covide_19_Tracker
             if (pora.GetItemText(this.pora.SelectedItem) == "Adress")
             {
                 phoneoradress.Text = "Adress";
-                MessageBox.Show(cn);
+                
+            }
+            else
+            {
+                phoneoradress.Text = "Phone";
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (proavalue.Text != "" && Cn != "")
+            if (proavalue.Text != "")
             {
                 Persistance pr = new Persistance();
                 
