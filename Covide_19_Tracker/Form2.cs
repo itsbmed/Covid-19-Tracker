@@ -68,10 +68,16 @@ namespace Covide_19_Tracker
         {
             Updates up = new Updates();
             up.Cn = Usercni.Text;
-            MessageBox.Show(up.Cn);
             this.Hide();
             Updates updates = new Updates();
             updates.Show();
+        }
+
+        private void Rt_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.Show();
         }
     }
 }

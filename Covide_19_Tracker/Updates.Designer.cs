@@ -36,6 +36,7 @@ namespace Covide_19_Tracker
             this.label7 = new System.Windows.Forms.Label();
             this.phoneoradress = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Rt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -115,12 +116,30 @@ namespace Covide_19_Tracker
             this.label3.TabIndex = 28;
             this.label3.Text = "Why You Want To Changed  :";
             // 
+            // Rt
+            // 
+            this.Rt.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Rt.BackgroundImage = global::Covide_19_Tracker.Properties.Resources._return;
+            this.Rt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rt.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Rt.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.HotTrack;
+            this.Rt.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
+            this.Rt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Rt.Location = new System.Drawing.Point(17, 27);
+            this.Rt.Name = "Rt";
+            this.Rt.Size = new System.Drawing.Size(49, 38);
+            this.Rt.TabIndex = 29;
+            this.Rt.UseVisualStyleBackColor = false;
+            this.Rt.Click += new System.EventHandler(this.Rt_Click);
+            // 
             // Updates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(747, 450);
+            this.Controls.Add(this.Rt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.phoneoradress);
             this.Controls.Add(this.label7);
@@ -144,5 +163,6 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label phoneoradress;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Rt;
     }
 }

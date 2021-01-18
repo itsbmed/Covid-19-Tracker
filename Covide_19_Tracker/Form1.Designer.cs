@@ -36,7 +36,6 @@ namespace Covide_19_Tracker
             this.Cnbox = new System.Windows.Forms.TextBox();
             this.Adbox = new System.Windows.Forms.TextBox();
             this.Fnbox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.GrField = new System.Windows.Forms.ComboBox();
@@ -44,6 +43,8 @@ namespace Covide_19_Tracker
             this.GenreField = new System.Windows.Forms.Label();
             this.StatutField = new System.Windows.Forms.Label();
             this.UseCondition = new System.Windows.Forms.CheckBox();
+            this.Rt = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,17 +129,6 @@ namespace Covide_19_Tracker
             this.Fnbox.Enter += new System.EventHandler(this.Focus_Click);
             this.Fnbox.Leave += new System.EventHandler(this.Focus_Leave);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(449, 757);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -218,12 +208,41 @@ namespace Covide_19_Tracker
             this.UseCondition.UseVisualStyleBackColor = true;
             this.UseCondition.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // Rt
+            // 
+            this.Rt.BackColor = System.Drawing.Color.White;
+            this.Rt.BackgroundImage = global::Covide_19_Tracker.Properties.Resources._return;
+            this.Rt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rt.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Rt.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.HotTrack;
+            this.Rt.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
+            this.Rt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Rt.Location = new System.Drawing.Point(12, 12);
+            this.Rt.Name = "Rt";
+            this.Rt.Size = new System.Drawing.Size(49, 38);
+            this.Rt.TabIndex = 19;
+            this.Rt.UseVisualStyleBackColor = false;
+            this.Rt.Click += new System.EventHandler(this.Rt_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(449, 757);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(949, 741);
+            this.Controls.Add(this.Rt);
             this.Controls.Add(this.UseCondition);
             this.Controls.Add(this.StatutField);
             this.Controls.Add(this.GenreField);
@@ -262,6 +281,7 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.Label GenreField;
         private System.Windows.Forms.Label StatutField;
         private System.Windows.Forms.CheckBox UseCondition;
+        private System.Windows.Forms.Button Rt;
     }
 }
 

@@ -43,6 +43,7 @@ namespace Covide_19_Tracker
             this.button1 = new System.Windows.Forms.Button();
             this.Searchbox = new System.Windows.Forms.TextBox();
             this.SearchButton = new System.Windows.Forms.Button();
+            this.Rt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Username
@@ -192,12 +193,30 @@ namespace Covide_19_Tracker
             this.SearchButton.UseVisualStyleBackColor = true;
             this.SearchButton.Click += new System.EventHandler(this.Search);
             // 
+            // Rt
+            // 
+            this.Rt.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Rt.BackgroundImage = global::Covide_19_Tracker.Properties.Resources._return;
+            this.Rt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Rt.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.Rt.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.HotTrack;
+            this.Rt.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
+            this.Rt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Rt.Location = new System.Drawing.Point(21, 462);
+            this.Rt.Name = "Rt";
+            this.Rt.Size = new System.Drawing.Size(49, 38);
+            this.Rt.TabIndex = 30;
+            this.Rt.UseVisualStyleBackColor = false;
+            this.Rt.Click += new System.EventHandler(this.Rt_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(910, 532);
+            this.Controls.Add(this.Rt);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.Searchbox);
             this.Controls.Add(this.button1);
@@ -235,5 +254,6 @@ namespace Covide_19_Tracker
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox Searchbox;
         private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.Button Rt;
     }
 }

@@ -76,6 +76,13 @@ namespace Covide_19_Tracker
             home.Show();
         }
 
+        private void Rt_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.Show();
+        }
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
