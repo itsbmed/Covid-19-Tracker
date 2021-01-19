@@ -29,6 +29,7 @@ namespace Covide_19_Tracker
            
         }
         public Form2 f2 = new Form2();
+        
         private void SearchButton_Click(object sender, EventArgs e)
         {
             if (Searchbox.Text.Length == 8)
@@ -37,11 +38,11 @@ namespace Covide_19_Tracker
                 
                 f2.Show();
                 Persistance pr = new Persistance();
-                f2.Username.Text = pr.Get_Patient(Searchbox.Text)[1];
+               f2.Username.Text = pr.Get_Patient(Searchbox.Text)[1];
                 f2.Usercni.Text = pr.Get_Patient(Searchbox.Text)[0];
                 f2.Userage.Text = pr.Get_Patient(Searchbox.Text)[5];
                 f2.Userphone.Text = pr.Get_Patient(Searchbox.Text)[3];
-                f2.Useradress.Text = pr.Get_Patient(Searchbox.Text)[2];
+               f2.Useradress.Text = pr.Get_Patient(Searchbox.Text)[2];
                 f2.Userstatut.Text = pr.Get_Patient(Searchbox.Text)[4];
 
                 if (f2.Userstatut.Text == "Patient")
